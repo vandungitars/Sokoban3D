@@ -57,7 +57,11 @@ public class GameController : MonoBehaviour
                 if ((box[i].transform.position.x == trap[j].transform.position.x)
                     && box[i].transform.position.z == trap[j].transform.position.z) kq++;
             }
-        if (kq == box.Length) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (kq == box.Length)
+        {
+            Debug.Log("------------------------");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
     /// <summary>
     /// tắt tiếng trong game

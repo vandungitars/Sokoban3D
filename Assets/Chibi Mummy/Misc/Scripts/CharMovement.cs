@@ -82,10 +82,7 @@ public class CharMovement : MonoBehaviour
             box_.MovePosition(box_.transform.position + movement);
         }
     }
-    void OnCollisionEnter(Collision other)
-    {
 
-    }
     /// <summary>
     /// Di chuyển nhân vật
     /// </summary>
