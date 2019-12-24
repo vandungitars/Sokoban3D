@@ -810,7 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5d7204689911844956746f62665ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1165411968}
   offset: {x: -1, y: -5, z: 5}
   useOffSetValues: 0
   rotateSpeed: 5
