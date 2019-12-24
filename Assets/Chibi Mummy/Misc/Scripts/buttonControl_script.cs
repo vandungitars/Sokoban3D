@@ -4,7 +4,7 @@ using System.Collections;
 public class buttonControl_script : MonoBehaviour 
 {
     /// <summary>
-    /// bắt đầu mani Menu
+    /// bắt đầu main Menu
     /// </summary>
 	Animator anim;
 

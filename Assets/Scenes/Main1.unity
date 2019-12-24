@@ -953,7 +953,7 @@ MonoBehaviour:
   one: {fileID: 1975734728}
   two: {fileID: 1338701214}
   three: {fileID: 11769743}
-  aud: {fileID: 0}
+  aud: {fileID: 1524527974}
   txtLV: {fileID: 1914648946}
 --- !u!1 &733198864
 GameObject:
@@ -1444,16 +1444,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 114473737943835850, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
-        type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114473737943835850, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 54052464852985954, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
         type: 3}
       propertyPath: m_Drag
@@ -1468,6 +1458,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 114473737943835850, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
+        type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114473737943835850, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 136520730519997966, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
         type: 3}
@@ -2488,6 +2488,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518559953}
   m_CullTransparentMesh: 0
+--- !u!82 &1524527974 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82144304963830000, guid: b7edb066b590fbc43bf60a5f494203f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1692645870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1541304964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1547587310296698, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
@@ -2814,7 +2820,7 @@ PrefabInstance:
     - target: {fileID: 82144304963830000, guid: b7edb066b590fbc43bf60a5f494203f0,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7edb066b590fbc43bf60a5f494203f0, type: 3}

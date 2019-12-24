@@ -1004,7 +1004,7 @@ MonoBehaviour:
   one: {fileID: 1975734728}
   two: {fileID: 1338701214}
   three: {fileID: 11769743}
-  audioSource: {fileID: 0}
+  aud: {fileID: 1692645871}
   txtLV: {fileID: 1804928488}
 --- !u!1 &733198864
 GameObject:
@@ -1248,6 +1248,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 633526486}
+    - target: {fileID: 114303251470276050, guid: c539544254e4a4a4baf824ffb9c12b75,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reset_Scene
+      objectReference: {fileID: 0}
     - target: {fileID: 224969983624026618, guid: c539544254e4a4a4baf824ffb9c12b75,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -1601,6 +1606,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 54052464852985954, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54052464852985954, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 54052464852985954, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 114473737943835850, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
         type: 3}
       propertyPath: rb
@@ -1611,24 +1631,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 54052464852985954, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
-        type: 3}
-      propertyPath: m_Drag
-      value: Infinity
-      objectReference: {fileID: 0}
-    - target: {fileID: 54052464852985954, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: Infinity
-      objectReference: {fileID: 0}
-    - target: {fileID: 54052464852985954, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 84
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114473737943835850, guid: 153d92ee8aba4c649a2cecc7756f8ec6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 153d92ee8aba4c649a2cecc7756f8ec6, type: 3}
+--- !u!54 &909345435 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 54052464852985954, guid: 153d92ee8aba4c649a2cecc7756f8ec6,
+    type: 3}
+  m_PrefabInstance: {fileID: 909345434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &924138143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2243,7 +2254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 15.800003, y: -17}
+  m_AnchoredPosition: {x: 15.799988, y: -17}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1331351854
@@ -2709,8 +2720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d2e188784ab2e419ea4ec78b7bc684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  moveSpeed: 0
+  rb: {fileID: 909345435}
+  moveSpeed: 3
 --- !u!1001 &1542021040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2933,7 +2944,7 @@ PrefabInstance:
     - target: {fileID: 65312233467748918, guid: 47228fa1adddaf84594c1e736d4e5da4,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47228fa1adddaf84594c1e736d4e5da4, type: 3}
@@ -2978,6 +2989,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7edb066b590fbc43bf60a5f494203f0, type: 3}
+--- !u!82 &1692645871 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82144304963830000, guid: b7edb066b590fbc43bf60a5f494203f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1692645870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1733686248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3039,25 +3056,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8fba633d44aace48a0c3b3ee7bb8e42, type: 3}
---- !u!1 &1733686249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1367431375630218, guid: b8fba633d44aace48a0c3b3ee7bb8e42,
-    type: 3}
-  m_PrefabInstance: {fileID: 1733686248}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1733686250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733686249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39bf38993199dea4695dc110ff4c41f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameController: {fileID: 633526484}
 --- !u!1001 &1749158212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3159,22 +3157,22 @@ PrefabInstance:
     - target: {fileID: 224029879832112906, guid: 654a085d612ef164cb0afe8ecc9e720e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -76.7
+      value: -86
       objectReference: {fileID: 0}
     - target: {fileID: 224029879832112906, guid: 654a085d612ef164cb0afe8ecc9e720e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -24.7
+      value: -17.25
       objectReference: {fileID: 0}
     - target: {fileID: 224029879832112906, guid: 654a085d612ef164cb0afe8ecc9e720e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 92.4
       objectReference: {fileID: 0}
     - target: {fileID: 224029879832112906, guid: 654a085d612ef164cb0afe8ecc9e720e,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 24.5
       objectReference: {fileID: 0}
     - target: {fileID: 224029879832112906, guid: 654a085d612ef164cb0afe8ecc9e720e,
         type: 3}
@@ -3441,8 +3439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5d7204689911844956746f62665ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
+  target: {fileID: 1666593311}
+  offset: {x: 0, y: -5, z: 10}
   useOffSetValues: 0
   rotateSpeed: 5
 --- !u!4 &1979650200 stripped
