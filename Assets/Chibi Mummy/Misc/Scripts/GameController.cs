@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour
 
     public Camera one;
     public Camera two;
-    public Camera three;
     public AudioSource aud;
     public Text txtLV;
     /// <summary>
@@ -18,21 +17,13 @@ public class GameController : MonoBehaviour
     {
         if (two.enabled == true)
         {
-            one.enabled = false;
+            one.enabled = true;
             two.enabled = false;
-            three.enabled = true;
-        }
-        else if (one.enabled == true)
-        {
-            one.enabled = false;
-            two.enabled = true;
-            three.enabled = false;
         }
         else
         {
-            one.enabled = true;
-            two.enabled = false;
-            three.enabled = false;
+            one.enabled = false;
+            two.enabled = true;
         }
     }
     /// <summary>
